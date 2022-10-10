@@ -20,15 +20,28 @@ Fig. Multiple linear regression on how mpg varies with vehicle_length, vehicle_w
 
 - **lot_summary.** However, the lot_summary shows that Lot1 (variance = 0.980 pounds per square inch) and Lot2 (variance = 7.47 pounds per square inch) are within the design specifications, but Lot3 (variance = 170 pounds per square inch) exceeds the design specifications of 100 pounds per square inch.
 
-![Linear Regression of MechaCar_mpg Data](./Resources/d2_dfs.png)
+![Summary Statistic on All Lots and Each Lot](./Resources/d2_dfs.png)
 Fig. The total_summary (above) and lot_summary (below) dataframes.
 
 ## T-Tests on Suspension Coils
 
+One sample t-tests are used, because the comparison is between the mean of the population and the mean of a sample of that population. The mean of all Lots (1498.78, n=150, p=0.060), the mean of Lot1 (1500, n=50, p=1), and the mean of Lot2 (1500.2, n=50, p=0.607) are not significantly different from the population mean (1500). However, the mean of Lot3 (1496.14, n=50, p=0.042) is significantly different from the population mean (1500).
+
+![All Lots v Population](./Resources/d3_tot.png)
+Fig. t-test: mean of all Lots v. mean of population.
+
+---
+![Lot1 v Population](./Resources/d3_lot1.png)
+Fig. t-test: mean of Lot1 v. mean of population.
+
+---
+![Lot1 v Population](./Resources/d3_lot2.png)
+Fig. t-test: mean of Lot2 v. mean of population.
+
+---
+![Lot1 v Population](./Resources/d3_lot3.png)
+Fig. t-test: mean of Lot3 v. mean of population.
 
 ## Study Design: MechaCar vs Competition
 
 
-
-
-When an intercept is statistically significant, it means that the intercept term explains a significant amount of variability in the dependent variable when all independent vairables are equal to zero. Depending on our dataset, a significant intercept could mean that the significant features (such as weight and horsepower) may need scaling or transforming to help improve the predictive power of the model. Alternatively, it may mean that there are other variables that can help explain the variability of our dependent variable that have not been included in our model. Depending on the dataset and desired performance of the model, you may want to change your independent variables and/or transform them and then re-evaluate your coefficients and significance.

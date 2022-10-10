@@ -33,3 +33,28 @@ cat('lot_summary dataframe:\n')
 (lot_summary <- as.data.frame(sc_table %>% 
     group_by(Manufacturing_Lot) %>% 
     summarize(Mean = mean(PSI), Median = median(PSI), Variance = sd(PSI)^2, SD = sd(PSI))))
+
+
+## Deliverable 3: T-Tests on Suspension Coils
+
+# Compare sample means to population mean: use one-sample t-tests
+# **Note: I could not get the subset argument of t.test() to work**
+# **I provide an alternative solution with the correct df=49.**
+
+# all Lot mean PSI v. population mean PSI
+cat('\n\nt-test: mean of all Lots v. mean of population\n')
+t.test(sc_table$PSI, mu = 1500)
+
+# by Lot t-tests comparing Lot PSI means with population mean
+
+cat('t-test: mean of Lot1 v. mean of population\n')
+lot1 <- subset(sc_table, Manufacturing_Lot == "Lot1", select = PSI)
+t.test(lot1, mu = 1500)
+
+cat('t-test: mean of Lot2 v. mean of population\n')
+lot2 <- subset(sc_table, Manufacturing_Lot == "Lot2", select = PSI)
+t.test(lot2, mu = 1500)
+
+cat('t-test: mean of Lot3 v. mean of population\n')
+lot3 <- subset(sc_table, Manufacturing_Lot == "Lot3", select = PSI)
+t.test(lot3, mu = 1500)
