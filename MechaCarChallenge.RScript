@@ -19,3 +19,17 @@ summary(mc_lm)
 ## Deliverable 2: Summary Statistics on Suspension Coils
 
 # import and read in the Suspension_Coil.csv file as a table
+sc_table <- read.csv(file='Suspension_Coil.csv', check.names = F, stringsAsFactors = F)
+
+# get total summary
+cat ('total_summary dataframe:\n')
+(total_summary <- sc_table %>%
+  summarise(Mean = mean(PSI), Median = median(PSI), Variance = sd(PSI)^2, SD = sd(PSI)))
+
+cat('\n')
+
+# get lot summary
+cat('lot_summary dataframe:\n')
+(lot_summary <- as.data.frame(sc_table %>% 
+    group_by(Manufacturing_Lot) %>% 
+    summarize(Mean = mean(PSI), Median = median(PSI), Variance = sd(PSI)^2, SD = sd(PSI))))

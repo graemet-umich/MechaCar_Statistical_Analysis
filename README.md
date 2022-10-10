@@ -14,6 +14,14 @@ Fig. Multiple linear regression on how mpg varies with vehicle_length, vehicle_w
 
 ## Summary Statistics on Suspension Coils
 
+"The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch."
+
+- **total_summary.** The total_summary shows that the combined Lot variance is 62.3 pounds per square inch, which is within the design specifications.
+
+- **lot_summary.** However, the lot_summary shows that Lot1 (variance = 0.980 pounds per square inch) and Lot2 (variance = 7.47 pounds per square inch) are within the design specifications, but Lot3 (variance = 170 pounds per square inch) exceeds the design specifications of 100 pounds per square inch.
+
+![Linear Regression of MechaCar_mpg Data](./Resources/d2_dfs.png)
+Fig. The total_summary (above) and lot_summary (below) dataframes.
 
 ## T-Tests on Suspension Coils
 
