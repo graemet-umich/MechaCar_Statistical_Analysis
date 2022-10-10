@@ -1,15 +1,21 @@
 ## MechaCarChallenge.RScript
 
+
 ## Deliverable 1: Linear Regression to Predict MPG
 
 # load dplyr package
 library(dplyr)
 
 # Import and read in the MechaCar_mpg.csv file as a dataframe
-mc_df <- read.csv(file='Resources/MechaCar_mpg.csv', check.names = F, stringsAsFactors = F)
+mc_df <- read.csv(file='MechaCar_mpg.csv', check.names = F, stringsAsFactors = F)
 
 # Perform linear regression
 (mc_lm <- lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=mc_df))
 
 # Summarize linear regression
 summary(mc_lm)
+
+
+## Deliverable 2: Summary Statistics on Suspension Coils
+
+# import and read in the Suspension_Coil.csv file as a table

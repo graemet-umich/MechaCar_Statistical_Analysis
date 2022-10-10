@@ -1,5 +1,5 @@
 # MechaCar_Statistical_Analysis
-Module 15: Statistics and R
+Statistics and R
 
 ## Linear Regression to Predict MPG
 
