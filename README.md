@@ -44,7 +44,7 @@ Fig. t-test: mean of Lot3 v. mean of population.
 
 ## Study Design: MechaCar vs Competition
 
-Here in Southeastern Michigan, we travel alot by car in the wintertime. Snow and ice on the roads are a given. A study is proposed to test if the MechaCar performs better in winter weather driving conditions than the Competition. 
+Here in Southeastern Michigan, we travel a lot by car in the wintertime. Snow and ice on the roads are a given. A study is proposed to test if the MechaCar performs better in winter weather driving conditions than the Competition. 
 
 - **Metrics to test.** Testing is done on a reproducible "slippery course" where there is less friction between the road and the vehicle tires. By reproducible it is meant that the course has the same "slipperiness" for all tests on all cars. On real-world icy roads, consider 35 mph to be a maximum relatively safe speed for testing. In addition to novel transmission and braking technology, if the MechaCar has specially designed tires, then use those during testing as well, as they are part of the overall design of the car.
     - **Stopping distance 35 to 0 mph.** Stopping quickly is important to prevent rear-ending cars in front. It is also a proxy for slowing down when taking a curve or sliding during a turn.
