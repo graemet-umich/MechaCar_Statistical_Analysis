@@ -52,7 +52,7 @@ Here in Southeastern Michigan, we travel a lot by car in the wintertime. Snow an
 
 ---
 
-- **Hypotheses.** The two null hypotheses are that there are no statistically significant differences in stopping distance H(d,0) or 0 to 30 mph time H(t,0) between the MechaCar and the Competition. One pair of alternative hypotheses is that the stopping distance statistically significantly differs H(d,a1) or that the 0 to 35 mph time H(t,a1) statistically significantly differs between the MechaCar and the Competition. Another pair of alternative hypotheses is that the MechaCar has a statistically significantly shorter stopping distance H(d,a2) or a statistically significantly faster 0 to 35 mph time H(t,a2). See table below for a compact display of hypotheses.
+- **Hypotheses.** The two null hypotheses are that there are no statistically significant differences in stopping distance H(d,0) or 0 to 35 mph time H(t,0) between the MechaCar and the Competition. One pair of alternative hypotheses is that the stopping distance statistically significantly differs H(d,a1) or that the 0 to 35 mph time H(t,a1) statistically significantly differs between the MechaCar and the Competition. Another pair of alternative hypotheses is that the MechaCar has a statistically significantly shorter stopping distance H(d,a2) or a statistically significantly faster 0 to 35 mph time H(t,a2). See table below for a compact display of hypotheses.
 
 | Abbr. | Type | t-Test | Description |
 | --- | --- | --- | --- |
