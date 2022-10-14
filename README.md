@@ -69,10 +69,10 @@ Table of the abbrebiation (column Abbv.) of the hypothesis, the type (column Typ
 
 - **Statistical tests.** The metrics chosen to measure are mean stopping distance from 35 to 0 mph and mean 0 to 35 mph time for the MechaCar and the Competition. To compare means between a sampling of MechaCars and a sampling of the Competition one uses a two-sample t-test. To compare a difference in means, use a two-sided t-test. To test whether the MechaCar sample has a smaller mean than the Competition, use a one-sided test. A p-value less than 0.05 indicates that the null hypothesis should be rejected and the alternative hypothesis accepted. Here are the two-sample t-tests to use in R for the four hypotheses in question:
 
-    - **H(d,a1) v. H(d,0):** t.test(x=MechaCar.stopping_distance, y=Competition.stopping_distance, alternative=two.sided)
-    - **H(t,a1) v. H(t,0):** t.test(x=MechaCar.0_to_35, y=Competition.0_to_35, alternative=two.sided)
-   - **H(d,a2) v. H(d,0):** t.test(x=MechaCar.stopping_distance, y=Competition.stopping_distance, alternative=less)
-    - **H(t,a2) v. H(t,0):** t.test(x=MechaCar.0_to_35, y=Competition.0_to_35, alternative=less)
+    - **H(d,a1) v. H(d,0):** `t.test(x=MechaCar.stopping_distance, y=Competition.stopping_distance, alternative=two.sided)`
+    - **H(t,a1) v. H(t,0):** `t.test(x=MechaCar.0_to_35, y=Competition.0_to_35, alternative=two.sided)`
+   - **H(d,a2) v. H(d,0):** `t.test(x=MechaCar.stopping_distance, y=Competition.stopping_distance, alternative=less)`
+    - **H(t,a2) v. H(t,0):** `t.test(x=MechaCar.0_to_35, y=Competition.0_to_35, alternative=less)`
 
 ---
 
